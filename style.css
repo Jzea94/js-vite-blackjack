@@ -1,0 +1,74 @@
+html, body {
+  margin: 0px;
+  background-color: #1e1e1e;
+  /* 
+  background-color: #121212;
+  background-color: #1E1E1E;
+  background-color: #2C2C2C;
+  background-color: #1A1A1A; */
+  font-family: 'Courier New', Courier, monospace;
+  color : #ffffff;
+}
+
+.titulo {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.carta {
+    position: relative;
+    width: 150px;
+    left: 100px;
+    margin-left: -75px;
+}
+
+#computadora-cartas, #jugador-cartas {
+    height: 240px;
+}
+#player, #dealer {
+    height: 240px;
+}
+
+
+/* Estilos para modal */
+/* Fondo tenue */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6); /* Oscurece el fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Asegura que esté por encima de todo */
+}
+
+/* Ocultar */
+.hidden {
+  display: none;
+}
+
+/* Caja del mensaje */
+#resultDiv {
+  /* background: #1e1e1e; */
+  font-family: 'Press Start 2P', cursive;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 2.0rem;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animación suave de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
